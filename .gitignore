@@ -1,0 +1,11 @@
+# Databricks notebook checkpoints
+.ipynb_checkpoints/
+
+# Databricks auto-generated state files
+__pycache__/
+*.pyc
+
+# Local environment files 
+.env
+*.env
+secrets.txt
