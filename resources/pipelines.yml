@@ -3,7 +3,7 @@ resources:
 
     bronze_pipeline:
       name: bronze_pipeline_${var.env}
-      target: ${var.env}.bronze
+      target: bronze
       catalog: ${var.env}
       serverless: true
       continuous: false
@@ -15,7 +15,7 @@ resources:
 
     silver_pipeline:
       name: silver_pipeline_${var.env}
-      target: ${var.env}.silver
+      target: silver
       catalog: ${var.env}
       serverless: true
       continuous: false
@@ -29,7 +29,7 @@ resources:
 
     gold_pipeline:
       name: gold_pipeline_${var.env}
-      target: ${var.env}.gold
+      target: gold
       catalog: ${var.env}
       serverless: true
       continuous: false
