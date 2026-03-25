@@ -25,8 +25,8 @@ jobs:
           DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
         run: databricks bundle deploy --target dev
 
-      - name: Run pipeline (optional)
-        env:
-          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
-          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
-        run: databricks bundle run --target dev iowa_liquor_daily
+#      - name: Run pipeline
+#        env:
+#          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+#          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+#        run: databricks bundle run --target dev iowa_liquor_daily
