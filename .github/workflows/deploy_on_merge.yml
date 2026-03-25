@@ -1,0 +1,32 @@
+# Runs when code is merged (pushed) to main.
+# Deploys the DAB to the dev environment.
+
+name: Deploy DAB to Dev
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    name: Deploy bundle to dev
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Databricks CLI
+        uses: databricks/setup-cli@main
+
+      - name: Deploy bundle
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        run: databricks bundle deploy --target dev
+
+      - name: Run pipeline (optional)
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        run: databricks bundle run --target dev iowa_liquor_daily
