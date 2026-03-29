@@ -123,8 +123,10 @@ The maintenance notebook (`10_delta_maintenance`) demonstrates few Delta Lake op
 An 8-task Databricks Workflow consisting of DLT pipeline tasks and regular notebook tasks is implemented.
 
 Workflow run overview (Databricks UI):
+
 <img width="800" alt="picture_4" src="https://github.com/user-attachments/assets/4444175b-efdf-46a0-89a6-766e0b8c0613" />
 
+The table below shows the tasks, their types, and purposes:
 
 | Task               | Type         | Purpose                                     |
 |--------------------|--------------|---------------------------------------------|
@@ -138,10 +140,12 @@ Workflow run overview (Databricks UI):
 | quality_check      | Notebook     | Row counts, FK integrity, Gold validation   |
 
 Tasks view (Databricks UI):
+
 <img width="800" alt="picture_3" src="https://github.com/user-attachments/assets/c46180be-39ce-43f8-bcf3-645289e0d247" />
 
 
 Executed task list (Databricks UI):
+
 <img width="800" alt="picture_6" src="https://github.com/user-attachments/assets/9ab8503c-6ab9-4efa-bca9-41653672b25d" />
 
 
