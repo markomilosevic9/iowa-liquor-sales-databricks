@@ -105,8 +105,7 @@ A standalone notebook (`05_silver_dims_and_facts`) runs as a regular Workflow ta
 
 The ERD of the implemented dimensional model is shown below:
 
-![picture_5](https://github.com/user-attachments/assets/4d17b9a1-8f7b-4afd-90d9-ca95b00f68ec)
-
+<img width="800" alt="picture_3" src="https://github.com/user-attachments/assets/4d17b9a1-8f7b-4afd-90d9-ca95b00f68ec"/>
 
 ## Gold layer
 Gold consists of DLT materialized views that fully recompute on each DLT pipeline refresh. These views cover sales trends (monthly revenue, day-of-week patterns, seasonal category performance), city and county-level geographic analysis, category market share and vendor scorecards, sales performance of stores. Moreover, a view summarizing pipeline health is included.
